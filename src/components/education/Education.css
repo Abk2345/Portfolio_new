@@ -1,0 +1,67 @@
+.education__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.education__container > div {
+    background: var(--color-bg-variant);
+    margin: auto;
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+
+.education__container > div:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.education__container > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.education__details__semgradecard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    
+}
+
+.education__semwisegrade {
+    margin-top: 1rem;
+}
+
+.education__gradecardfull {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* ==================== MEDIA QUERRIES (MEDIUM DEVICES) ============ */
+@media screen and (max-width: 1024px){
+    .education__details__semgradecard {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .education__container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+}
+
+/* ==================== MEDIA QUERRIES (SMALL DEVICES) ============ */
+@media screen and (max-width: 600px){
+    .education__details__semgradecard {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .education__container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
